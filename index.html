@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Weather App</h1>
+      <nav>
+        <ul>
+          <li><a href="#" id="temperature-link">Temperature</a></li>
+          <li><a href="#" id="conditions-link">Conditions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="search-section">
+        <h2>Search Weather by Coordinates</h2>
+        <form id="location-form">
+          <label for="latitude">Latitude:</label>
+          <input
+            type="number"
+            id="latitude"
+            name="latitude"
+            step="any"
+            required
+          />
+
+          <label for="longitude">Longitude:</label>
+          <input
+            type="number"
+            id="longitude"
+            name="longitude"
+            step="any"
+            required
+          />
+
+          <button type="submit">Get Weather</button>
+        </form>
+
+        <div class="unit-toggle">
+          <label for="unit-switch">Display units:</label>
+          <input type="checkbox" id="unit-switch" />
+          <span id="unit-label">Imperial</span>
+        </div>
+      </section>
+
+      <section id="temperature-section" class="weather-section active">
+        <h2>Current Temperature</h2>
+        <div id="temperature-data">
+          <p>Waiting for search...</p>
+        </div>
+      </section>
+
+      <section id="conditions-section" class="weather-section">
+        <h2>Weather Conditions</h2>
+        <div id="conditions-data">
+          <p>Waiting for search...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Weather data provided by Open-Meteo API</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
