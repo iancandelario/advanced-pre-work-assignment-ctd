@@ -25,7 +25,7 @@ Before you begin, make sure you have these installed:
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/iancandelarioadvanced-pre-work-assignment-ctd.git
+   git clone https://github.com/iancandelario/advanced-pre-work-assignment-ctd.git
    ```
 2. Go to the project directory
 3. Open the index.html file in your browser (I recommend using a live server extension like the one in VSC, then right clicking the index.html file and clicking "Open with Live Server")
